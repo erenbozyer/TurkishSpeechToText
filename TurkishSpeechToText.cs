@@ -55,7 +55,7 @@ namespace TurkishSpeechToText
                 else if (selectedModel.Contains("Turkish"))
                     model = new Model("Model-tr");
 
-                recognizer = new VoskRecognizer(model, 41000);
+                recognizer = new VoskRecognizer(model, 16000);
 
                 lblStatus.Text = "✅ Model başarıyla yüklendi: " + selectedModel;
                 lblStatus.ForeColor = Color.Green;
