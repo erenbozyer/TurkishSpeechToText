@@ -90,7 +90,7 @@
             this.lblStatus.TabIndex = 6;
             this.lblStatus.Text = "STATUS";
             // 
-            // Form1
+            // TurkishSpeechToText
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,7 +101,7 @@
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnStartStop);
-            this.Name = "Form1";
+            this.Name = "TurkishSpeechToText";
             this.Text = "TurkishSpeechToText";
             this.ResumeLayout(false);
             this.PerformLayout();

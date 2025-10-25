@@ -263,7 +263,5 @@ namespace TurkishSpeechToText
                 }
             }
         }
-
-
     }
 }
