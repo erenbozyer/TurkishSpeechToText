@@ -1,6 +1,6 @@
 ﻿namespace TurkishSpeechToText
 {
-    partial class Form1
+    partial class TurkishSpeechToText
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -102,7 +102,7 @@
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnStartStop);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TurkishSpeechToText";
             this.ResumeLayout(false);
             this.PerformLayout();
 

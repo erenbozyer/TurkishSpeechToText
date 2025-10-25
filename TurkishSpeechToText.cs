@@ -15,14 +15,14 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TurkishSpeechToText
 {
-    public partial class Form1 : Form
+    public partial class TurkishSpeechToText : Form
     {
         private Model model;
         private VoskRecognizer recognizer;
         private WaveInEvent waveIn;
         private bool isRecording = false;
 
-        public Form1()
+        public TurkishSpeechToText()
         {
             InitializeComponent();
             InitializeModelSelector();
@@ -32,7 +32,7 @@ namespace TurkishSpeechToText
         //ComboBox (Model seçici) başlangıç ayarı
         private void InitializeModelSelector()
         {
-            comboModels.Items.Add("English - vosk-model-en-us-0.22");
+            comboModels.Items.Add("English - vosk-model-small-en-us-0.15");
             comboModels.Items.Add("Turkish - vosk-model-small-tr-0.3");
             comboModels.SelectedIndex = 0; // varsayılan İngilizce
             LoadSelectedModel();
@@ -55,7 +55,7 @@ namespace TurkishSpeechToText
                 else if (selectedModel.Contains("Turkish"))
                     model = new Model("Model-tr");
 
-                recognizer = new VoskRecognizer(model, 16000);
+                recognizer = new VoskRecognizer(model, 41000);
 
                 lblStatus.Text = "✅ Model başarıyla yüklendi: " + selectedModel;
                 lblStatus.ForeColor = Color.Green;
